@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/actionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/actionBtnTv"
+        android:backgroundTint="@color/edittext_tint"
+        android:hint="@string/learning_site_url_hint"
+        android:lines="1"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/actionBtnTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:text=">"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="loader_bottom_margin">30dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="edittext_horizontal_margin">25dip</dimen>
+    <dimen name="titleSize">22dip</dimen>
+    <dimen name="onboard_descr_margin_bottom">155dip</dimen>
+    <dimen name="title_smal_size">16dp</dimen>
+
+    <dimen name="login_options_item_top_margin">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+    <dimen name="very_large_txt">22sp</dimen>
+    <dimen name="large_txt">18sp</dimen>
+    <dimen name="med_txt">14sp</dimen>
+    <dimen name="heading_txt">16sp</dimen>
+
+    <!--login-->
+    <dimen name="login_top_margin">100dip</dimen>
+    <dimen name="login_horizontal_margin">60dip</dimen>
+    <dimen name="login_small_space">10dip</dimen>
+    <dimen name="login_very_small_space">6dip</dimen>
+    <dimen name="login_medium_space">20dip</dimen>
+    <dimen name="login_large_space">90dip</dimen>
+    <dimen name="login_button_padding">10dp</dimen>
+
+</resources>

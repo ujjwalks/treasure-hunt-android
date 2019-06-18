@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO: Add correct settings here -->
+    <PreferenceCategory android:title="MindTickle Settings" />
+    <SwitchPreference
+        android:key="logsVerbose"
+        android:summary="Show debug logs on LogCat"
+        android:title="Debug Logs" />
+</PreferenceScreen>

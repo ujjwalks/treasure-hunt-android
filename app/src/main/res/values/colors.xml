@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0072bc</color>
+
+    <color name="edittext_tint">#f2f2f2</color>
+    <color name="edittext_tint_1">#d7d7d7</color>
+
+    <color name="icon_color">#ffffff</color>
+
+    <color name="text_dark_color">#000000</color>
+    <color name="learning_site_background">#f7f7f7</color>
+    <color name="white">#ffffff</color>
+
+    <color name="learning_options_background">#f1faff</color>
+    <color name="login_option_title">#ffffff</color>
+    <color name="login_button">#494949</color>
+    <color name="site_title">#0072bc</color>
+    <color name="site_url_hint_text">#999999</color>
+    <color name="site_url_text">#494949</color>
+</resources>
