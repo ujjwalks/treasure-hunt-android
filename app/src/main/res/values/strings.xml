@@ -1,98 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2016 Google Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
 <resources>
-    <string name="app_name">TreasureHunt</string>
+  <string name="app_name">Treasure Hunt</string>
+  <string name="fit_image_to_scan">Fit image to scan</string>
 
-    <!-- Errors -->
-    <string name="error_no_internet">No Internet</string>
-    <string name="error_authentication_required">Authentication required</string>
-    <string name="error_unexpected">Unexpected error occurred</string>
+  <!-- Errors -->
+  <string name="error_no_internet">No Internet</string>
+  <string name="error_authentication_required">Authentication required</string>
+  <string name="error_unexpected">Unexpected error occurred</string>
 
-    <string name="loading">Loading....</string>
+  <string name="loading">Loading....</string>
 
-    <string name="status_output">Status Output…</string>
-    <string name="company_name">companyname.mindtickle.com</string>
-    <string name="learning_site_description">Readiness Platform of Winning Sales Teams</string>
-    <string name="learning_site_url_hint">Enter Learning Site URL</string>
-    <string name="learning_site_url_forget"><u>Dont know your learning url?</u></string>
-    <string name="learning_site_getting_company_settings">Getting company settings!!</string>
+  <string name="status_output">Status Output…</string>
+  <string name="company_name">companyname.mindtickle.com</string>
+  <string name="learning_site_description">Readiness Platform of Winning Sales Teams</string>
+  <string name="learning_site_url_hint">Enter Learning Site URL</string>
+  <string name="learning_site_url_forget"><u>Dont know your learning url?</u></string>
+  <string name="learning_site_getting_company_settings">Getting company settings!!</string>
 
-    <!--Generic-->
-    <string name="learning_site_url">companyname.mindtickle.com</string>
-    <string name="submit_action">></string>
+  <!--Generic-->
+  <string name="learning_site_url">companyname.mindtickle.com</string>
+  <string name="submit_action">></string>
 
-    <!--Learning Fragment-->
-    <string name="enter_learning_site_url">Enter Learning Site URL</string>
+  <!--Learning Fragment-->
+  <string name="enter_learning_site_url">Enter Learning Site URL</string>
 
-    <!--Login Options-->
-    <string name="login_options_email_hint">Enter your email"</string>
-    <string name="login_options_or_email_hint">or enter your email"</string>
-    <string name="login_tc">By signing, i accept</string>
-    <string name="login_terms">Terms</string>
-    <string name="login_and">and</string>
-    <string name="login_privacy">Privacy!</string>
-    <string name="login_options_or">Or</string>
-    <string name="login_option_title">Continue with %1$s</string>
-    <!-- UserAccountount Password-->
-    <string name="account_password_password">Password</string>
-    <string name="account_password_password_for_account">Your password for</string>
-    <string name="account_password_reset_password"><u>Forget Password?</u></string>
+  <!--Login Options-->
+  <string name="login_options_email_hint">Enter your email"</string>
+  <string name="login_options_or_email_hint">or enter your email"</string>
+  <string name="login_tc">By signing, i accept</string>
+  <string name="login_terms">Terms</string>
+  <string name="login_and">and</string>
+  <string name="login_privacy">Privacy!</string>
+  <string name="login_options_or">Or</string>
+  <string name="login_option_title">Continue with %1$s</string>
+  <!-- UserAccountount Password-->
+  <string name="account_password_password">Password</string>
+  <string name="account_password_password_for_account">Your password for</string>
+  <string name="account_password_reset_password"><u>Forget Password?</u></string>
 
-    <!--Verify Opt-->
-    <string name="verify_otp_message">OTP sent to your mobile/email for</string>
-    <string name="verify_opt_resend_opt">Resend OTP</string>
-    <string name="verify_opt_opt">OTP</string>
+  <!--Verify Opt-->
+  <string name="verify_otp_message">OTP sent to your mobile/email for</string>
+  <string name="verify_opt_resend_opt">Resend OTP</string>
+  <string name="verify_opt_opt">OTP</string>
 
-    <!--Forgot Url-->
-    <string name="forgot_url_info1">Your company has hosted all your learning material. It is generally written as</string>
-    <string name="forgot_url_info2">You can find in the invitation email</string>
-    <string name="forgot_url_email">Your email address</string>
-    <string name="forgot_url_info3">or enter your email</string>
-    <string name="what_is_ls">What is a Learning Site URL?</string>
-    <string name="check_email">Check your email!</string>
-    <string name="sent_email_to">We have sent email to \n %1$s</string>
+  <!--Forgot Url-->
+  <string name="forgot_url_info1">Your company has hosted all your learning material. It is generally written as</string>
+  <string name="forgot_url_info2">You can find in the invitation email</string>
+  <string name="forgot_url_email">Your email address</string>
+  <string name="forgot_url_info3">or enter your email</string>
+  <string name="what_is_ls">What is a Learning Site URL?</string>
+  <string name="check_email">Check your email!</string>
+  <string name="sent_email_to">We have sent email to \n %1$s</string>
 
-    <!--FCM-->
-    <string name="default_notification_channel_id">fcm_default_channel</string>
-    <string name="back_to_home">Back to home</string>
-    <string name="forgot_url_requesting">Requesting server to fetch company url for you</string>
-    <string name="get_started">Get Started</string>
-    <string name="enter_new_password">Enter New Password</string>
-    <string name="logging_in">Logging In</string>
-    <string name="retry">Retry</string>
+  <!--FCM-->
+  <string name="default_notification_channel_id">fcm_default_channel</string>
+  <string name="back_to_home">Back to home</string>
+  <string name="forgot_url_requesting">Requesting server to fetch company url for you</string>
+  <string name="get_started">Get Started</string>
+  <string name="enter_new_password">Enter New Password</string>
+  <string name="logging_in">Logging In</string>
+  <string name="retry">Retry</string>
 
-    <string name="login">Login</string>
-    <string name="error_invalid_company_url">Invalid company url</string>
-    <string name="incorrect_email_or_password">Incorrect Email or Password</string>
-    <string name="invalid_password">Invalid password</string>
-    <string name="invalid_email">Please enter correct email</string>
+  <string name="login">Login</string>
+  <string name="error_invalid_company_url">Invalid company url</string>
+  <string name="incorrect_email_or_password">Incorrect Email or Password</string>
+  <string name="invalid_password">Invalid password</string>
+  <string name="invalid_email">Please enter correct email</string>
 
-    <string name="confirm_password">Confirm Password</string>
-    <string name="please_enter_password">Please enter password</string>
-    <string name="create_your_password">Create Your Password</string>
-    <string name="got_you_covered">We have got you covered, please check your email for next steps.</string>
-    <string name="forgot_password">Forgot Password?</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="please_enter_password">Please enter password</string>
+  <string name="create_your_password">Create Your Password</string>
+  <string name="got_you_covered">We have got you covered, please check your email for next steps.</string>
+  <string name="forgot_password">Forgot Password?</string>
 
-    <!--Login Error codes using SAML-->
-    <string name="deactivated_learner">Your account has been deactivated. Please contact the administrator at your company for help! </string>
-    <string name="user_not_active">Your account is not active</string>
-    <string name="something_went_wrong">Something went wrong on our server. Please retry after sometime.</string>
-    <string name="user_not_authorised">You have entered an invalid Email ID or Password. </string>
-    <string name="invalid_apikey_simplesso">Authorization didn\'t succeed , please contact support</string>
-    <string name="invalid_saml_response">Sorry, your user directory server is not allowing you to proceed</string>
-    <string name="invalid_google_code">Sorry, Google is not allowing you to proceed</string>
-    <string name="login_failed"> Sorry, your login failed for some reason. Please contact support</string>
-    <string name="error_creating_session">An unexpected error has occurred. Please try again later!</string>
-    <string name="error_activating_learner"> An unexpected error has occurred. Please try again later!</string>
-    <string name="learner_not_authorised"> Sorry, you are not authorised to access this Learning Site.</string>
-    <string name="invalid_email_or_password">The email address or password is incorrect.Please try again with valid credentials.</string>
-    <string name="unexpected_error">An unexpected error occurred.Please try again,or contact support!</string>
-    <string name="password_set_error">Your password is not set.Please visit web application to set it.</string>
+  <!--Login Error codes using SAML-->
+  <string name="deactivated_learner">Your account has been deactivated. Please contact the administrator at your company for help! </string>
+  <string name="user_not_active">Your account is not active</string>
+  <string name="something_went_wrong">Something went wrong on our server. Please retry after sometime.</string>
+  <string name="user_not_authorised">You have entered an invalid Email ID or Password. </string>
+  <string name="invalid_apikey_simplesso">Authorization didn\'t succeed , please contact support</string>
+  <string name="invalid_saml_response">Sorry, your user directory server is not allowing you to proceed</string>
+  <string name="invalid_google_code">Sorry, Google is not allowing you to proceed</string>
+  <string name="login_failed"> Sorry, your login failed for some reason. Please contact support</string>
+  <string name="error_creating_session">An unexpected error has occurred. Please try again later!</string>
+  <string name="error_activating_learner"> An unexpected error has occurred. Please try again later!</string>
+  <string name="learner_not_authorised"> Sorry, you are not authorised to access this Learning Site.</string>
+  <string name="invalid_email_or_password">The email address or password is incorrect.Please try again with valid credentials.</string>
+  <string name="unexpected_error">An unexpected error occurred.Please try again,or contact support!</string>
+  <string name="password_set_error">Your password is not set.Please visit web application to set it.</string>
 
-    <string name="ok">OK</string>
+  <string name="ok">OK</string>
 
-    <string name="error_sign_in"> Error Signing in</string>
-    <string name="error_enter_valid_email">Please enter valid email id</string>
-    <string name="error_account_deactivate_message">Your account is locked or deactivated. Please contact your Administrator to activate your account</string>
-    <string name="user_not_registered">User is not registered on this learning site, please contact your Administrator</string>
-    <string name="registering_user">Registering User</string>
-    <string name="verifying_email">Verifying Email</string>
+  <string name="error_sign_in"> Error Signing in</string>
+  <string name="error_enter_valid_email">Please enter valid email id</string>
+  <string name="error_account_deactivate_message">Your account is locked or deactivated. Please contact your Administrator to activate your account</string>
+  <string name="user_not_registered">User is not registered on this learning site, please contact your Administrator</string>
+  <string name="registering_user">Registering User</string>
+  <string name="verifying_email">Verifying Email</string>
 </resources>
