@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MindTickle</string>
+    <string name="app_name">TreasureHunt</string>
 
     <!-- Errors -->
     <string name="error_no_internet">No Internet</string>

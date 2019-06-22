@@ -6,8 +6,8 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.mindtickle.assignment.assignmentapp"
-        minSdkVersion 21
+        applicationId "com.murslabs.treasurehunt"
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -172,9 +172,9 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
 
-    //network interceptor
-    implementation "com.facebook.stetho:stetho:$stetho_version"
-    implementation "com.facebook.stetho:stetho-okhttp3:$stetho_version"
+//    //network interceptor
+//    implementation "com.facebook.stetho:stetho:$stetho_version"
+//    implementation "com.facebook.stetho:stetho-okhttp3:$stetho_version"
 
     //logger
     implementation "com.jakewharton.timber:timber:$timber_version"
@@ -211,6 +211,14 @@ dependencies {
         transitive = true
     }
 
+    //arcore
+    // Provides ARCore Session and related resources.
+    implementation "com.google.ar:core:$sceneformVersion"
+    // Provides ArFragment, and other UX resources.
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:$sceneformVersion"
+    // Alternatively, use ArSceneView without the UX dependency.
+    implementation "com.google.ar.sceneform:core:$sceneformVersion"
+
     //lifecycle and LiveData and ViewModel
     implementation "android.arch.lifecycle:runtime:$lifecycle_version"
     implementation "android.arch.lifecycle:extensions:$lifecycle_ext_version"
@@ -220,5 +228,6 @@ dependencies {
     testImplementation "org.json:json:20140107"
 }
 
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 
