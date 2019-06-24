@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.murslabs.treasurehunt">
-
 
     <!-- Authenticator -->
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Both "AR Optional" and "AR Required" apps require CAMERA permission. -->
     <uses-permission android:name="android.permission.CAMERA" />
@@ -20,9 +21,6 @@
          visible in the Google Play Store on devices that support ARCore.
          For "AR Optional" apps remove this line. -->
     <uses-feature android:name="android.hardware.camera.ar" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
 
     <application
         android:name="com.murslabs.treasurehunt.HuntApplication"
@@ -34,18 +32,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.murslabs.treasurehunt.splash.SplashActivity"
-            android:theme="@style/SplashTheme"/>
-        <activity android:name="com.murslabs.treasurehunt.home.HomeActivity" />
-        <activity android:name="com.murslabs.treasurehunt.hunt.HuntActivity">
+            android:name=".splash.SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.LoginActivity" />
-
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".hunt.HuntActivity">
+        </activity>
+        <activity android:name=".login.LoginActivity"/>
         <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
 

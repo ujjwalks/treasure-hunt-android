@@ -3,6 +3,8 @@ package com.murslabs.treasurehunt.dependency.builder
 import com.murslabs.treasurehunt.dependency.scope.PerActivity
 import com.murslabs.treasurehunt.home.HomeActivity
 import com.murslabs.treasurehunt.home.HomeActivityModule
+import com.murslabs.treasurehunt.login.LoginActivity
+import com.murslabs.treasurehunt.login.LoginActivityModule
 import com.murslabs.treasurehunt.splash.SplashActivity
 import com.murslabs.treasurehunt.splash.SplashActivityModule
 import dagger.Module
@@ -22,4 +24,8 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [(HomeActivityModule::class)])
     @PerActivity
     internal abstract fun bindHomeActivity(): HomeActivity
+
+    @ContributesAndroidInjector(modules = [(LoginActivityModule::class)])
+    @PerActivity
+    internal abstract fun bindLoginActivity(): LoginActivity
 }

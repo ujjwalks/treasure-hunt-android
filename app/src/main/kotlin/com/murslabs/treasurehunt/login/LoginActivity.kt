@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.murslabs.treasurehunt.R
 import com.murslabs.treasurehunt.base.BaseFragmentActivity
+import com.murslabs.treasurehunt.databinding.ActivityLoginBinding
 import com.murslabs.treasurehunt.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.intentFor
@@ -28,6 +29,7 @@ class LoginActivity : BaseFragmentActivity<ActivityLoginBinding>(), LoginContrac
         setAndBindContentView(R.layout.activity_login)
         configureGoogleSignIn()
         firebaseAuth = FirebaseAuth.getInstance()
+        setupUI()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

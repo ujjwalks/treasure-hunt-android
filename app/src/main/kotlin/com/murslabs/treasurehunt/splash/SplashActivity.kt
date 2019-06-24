@@ -2,6 +2,7 @@ package com.murslabs.treasurehunt.splash
 
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
@@ -31,14 +32,6 @@ class SplashActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     private fun initialize() {
         splashViewModel = ViewModelProviders.of(this, viewModelFactory).get(SplashViewModel::class.java)
-        splashViewModel
-                .isUserLoggedIn
-                .delay(500, TimeUnit.MILLISECONDS)
-                .subscribe { isLoggedIn ->
-                    if (isLoggedIn) gotoApp()
-                    else gotoLoginFlow()
-                    finish()
-                }
     }
 
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
@@ -48,13 +41,26 @@ class SplashActivity : AppCompatActivity(), HasSupportFragmentInjector {
     override fun onResume() {
         super.onResume()
         splashViewModel.refresh()
+        loginCheck()
+    }
+
+    fun loginCheck(){
+        if(splashViewModel.isUserLoggedIn()){
+            gotoApp()
+        }else{
+            gotoLoginFlow()
+        }
     }
 
     private fun gotoLoginFlow() {
-        startActivity(intentFor<LoginActivity>())
+        startActivity(intentFor<LoginActivity>().apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        })
     }
 
     private fun gotoApp() {
-        startActivity(intentFor<HomeActivity>())
+        startActivity(intentFor<HomeActivity>().apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        })
     }
 }
