@@ -26,6 +26,8 @@ abstract class BaseFragmentActivity<B : ViewDataBinding> : BaseActivity<B>() {
                 .commit()
     }
 
+    abstract fun initialize()
+
     /* to navigate between the fragments for a coordinator */
     protected fun replaceFragmentInternal(@IdRes containerId: Int,
                                           fragment: Fragment, fragmentTag: String?, args: Bundle?,

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import com.murslabs.treasurehunt.home.HomeActivity
+import com.murslabs.treasurehunt.login.LoginActivity
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
@@ -33,14 +34,11 @@ class SplashActivity : AppCompatActivity(), HasSupportFragmentInjector {
         splashViewModel
                 .isUserLoggedIn
                 .delay(500, TimeUnit.MILLISECONDS)
-                .subscribe({ isLoggedIn ->
-                    if (isLoggedIn) {
-                        gotoApp()
-                    } else {
-                        gotoLoginFlow()
-                    }
+                .subscribe { isLoggedIn ->
+                    if (isLoggedIn) gotoApp()
+                    else gotoLoginFlow()
                     finish()
-                })
+                }
     }
 
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
@@ -53,7 +51,7 @@ class SplashActivity : AppCompatActivity(), HasSupportFragmentInjector {
     }
 
     private fun gotoLoginFlow() {
-        startActivity(intentFor<HomeActivity>())
+        startActivity(intentFor<LoginActivity>())
     }
 
     private fun gotoApp() {

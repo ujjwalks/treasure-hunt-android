@@ -2,6 +2,10 @@
 *.apk
 *.ap_
 
+#Credentials files
+app/credentials.json
+app/google-services.json
+
 # Files for the ART/Dalvik VM
 *.dex
 

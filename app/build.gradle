@@ -84,7 +84,9 @@ project.ext {
     rxjava_version = '2.1.8'
     rxandroid_version = '2.0.2'
     parceler_version = '1.1.9'
-    firebase_version = '11.8.0'
+    firebase_version = '17.0.0'
+    firebase_auth_version = '18.0.0'
+    play_auth_version = '16.0.1'
     multidex_version = '1.0.3'
     mockito_version = '2.28.2'
 }
@@ -172,10 +174,6 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$dagger_version"
     implementation "com.google.dagger:dagger-android-support:$dagger_version"
 
-//    //network interceptor
-//    implementation "com.facebook.stetho:stetho:$stetho_version"
-//    implementation "com.facebook.stetho:stetho-okhttp3:$stetho_version"
-
     //logger
     implementation "com.jakewharton.timber:timber:$timber_version"
 
@@ -224,6 +222,11 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$lifecycle_ext_version"
     implementation "android.arch.lifecycle:common-java8:$lifecycle_ext_version"
     kapt "android.arch.lifecycle:compiler:$lifecycle_ext_version"
+
+    //google services
+    implementation "com.google.firebase:firebase-core:$firebase_version"
+    implementation "com.google.firebase:firebase-auth:$firebase_auth_version"
+    implementation "com.google.android.gms:play-services-auth:$play_auth_version"
 
     testImplementation "org.json:json:20140107"
 }
